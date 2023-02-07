@@ -37,7 +37,7 @@
           >
           <ul class="nav-list list">
             <li class="nav-item">
-              <a href="./index.html" class="nav-link link"
+              <a href="./index.html" class="nav-link current link"
                 ><span class="link-studio-text">Студія</span></a
               >
             </li>
@@ -75,7 +75,9 @@
       <section class="section hero-section">
         <div class="container hero-bg">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button-primary">Замовити послугу</button>
+          <button type="button" class="button-primary" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!-- Features section -->
@@ -140,29 +142,42 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list list">
             <li class="work-item">
+              <div class="work-thumb">
+                <img
+                  src="./images/work/box1.jpg"
+                  alt="Проектування та розробка на комп'ютері"
+                  width="370"
+                  height="294"
+                />
+                <div class="thumb-wrapper">
+                  <h3 class="thumb-title">Десктопні додатки</h3>
+                </div>
+              </div>
+            </li>
+            <li class="work-item">
+              <div class="work-thumb">
+                <img
+                  src="./images/work/box2.jpg"
+                  alt="Проектування та розробка на комп'ютері"
+                  width="370"
+                  height="294"
+                />
+                <div class="thumb-wrapper">
+                  <h3 class="thumb-title">Мобільні додатки</h3>
+                </div>
+              </div>
+            </li>
+            <div class="work-thumb">
               <img
-                src="./images/work/box1.jpg"
+                src="./images/work/box3.jpg"
                 alt="Проектування та розробка на комп'ютері"
                 width="370"
                 height="294"
               />
-            </li>
-            <li class="work-item">
-              <img
-                src="./images/work/box2.jpg"
-                alt="Обрання підходящого дизайну для мобільного сайту"
-                width="370"
-                height="294"
-              />
-            </li>
-            <li class="work-item">
-              <img
-                src="./images/work/box3.jpg"
-                alt="Обрання палітри для оформлення"
-                width="370"
-                height="294"
-              />
-            </li>
+              <div class="thumb-wrapper">
+                <h3 class="thumb-title">Дизайнерські рішення</h3>
+              </div>
+            </div>
           </ul>
         </div>
       </section>
@@ -488,51 +503,63 @@
           <ul class="footer-socials">
             <li class="footer-item">
               <a
-                      href="https://www.instagram.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="footer-social-link link"
-                      ><svg class="icon-social" width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="footer-social-link link"
+                ><svg class="icon-social" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="footer-item">
               <a
-                      href="https://www.instagram.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="footer-social-link link"
-                      ><svg class="icon-social" width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="footer-social-link link"
+                ><svg class="icon-social" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="footer-item">
               <a
-                      href="https://www.instagram.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="footer-social-link link"
-                      ><svg class="icon-social" width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="footer-social-link link"
+                ><svg class="icon-social" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="footer-item">
               <a
-                      href="https://www.instagram.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="footer-social-link link"
-                      ><svg class="icon-social" width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-            <!-- </li>  Aria label was here :0 -->
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="footer-social-link link"
+                ><svg class="icon-social" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+              <!-- </li>  Aria label was here :0 -->
+            </li>
           </ul>
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-btn-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
   </body>
 </html>
