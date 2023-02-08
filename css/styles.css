@@ -613,7 +613,7 @@ header {
   color: var(--primary-white-color);
 }
 
-.card-link:hover .thumb-text-hidden {
+.card-link:hover, .card-link:focus .thumb-text-hidden {
   transform: translateY(0%);
 }
 
